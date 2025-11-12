@@ -2,7 +2,7 @@ import re
 import string
 
 def split_text_into_words(text: str) -> list:
-    """
+    '''
     Split text into words, removing all punctuation.
     
     Args:
@@ -10,7 +10,7 @@ def split_text_into_words(text: str) -> list:
     
     Returns:
         list: List of words without punctuation
-    """
+    '''
     pattern = re.escape(string.punctuation)
     list_words = re.split(f'[{pattern} ]+', text)
     return list_words
@@ -24,4 +24,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
