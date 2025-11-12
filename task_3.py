@@ -1,5 +1,7 @@
 import re
+import string
 
-list_words = re.split(r'[.,:;!?\-"\'() ]+', input())
+pattern = re.escape(string.punctuation)
+list_words = re.split(f'[{pattern} ]+', input())
 
 print(list_words)
