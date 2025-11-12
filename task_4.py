@@ -1,7 +1,7 @@
 import re
 import string
 
-def get_unique_words(text: str) -> list:
+def split_and_get_unique_words(text: str) -> list:
     '''
     Split text into words, remove punctuation and return unique words.
     
@@ -20,9 +20,10 @@ def get_unique_words(text: str) -> list:
 
 def main():
     text = input()
-    unique_words = get_unique_words(text)
+    unique_words = split_and_get_unique_words(text)
     print(unique_words)
 
 
 if __name__ == '__main__':
     main()
+
