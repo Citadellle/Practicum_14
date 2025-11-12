@@ -1,7 +1,30 @@
 import re
 import string
 
-pattern = re.escape(string.punctuation)
-list_words = re.split(f'[{pattern} ]+', input())
+def split_text_into_words(text: str) -> list:
+    """
+    Split text into words, removing all punctuation.
+    
+    Args:
+        str: Input text to split
+    
+    Returns:
+        list: List of words without punctuation
+    
+    Example:
+        Input: "Hello, world! How are you?"
+        Output: ['Hello', 'world', 'How', 'are', 'you']
+    """
+    pattern = re.escape(string.punctuation)
+    list_words = re.split(f'[{pattern} ]+', text)
+    return list_words
 
-print(list_words)
+
+def main():
+    text = input()
+    words = split_text_into_words(text)
+    print(words)
+
+
+if __name__ == '__main__':
+    main()
