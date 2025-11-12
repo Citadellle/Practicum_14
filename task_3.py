@@ -13,6 +13,7 @@ def split_text_into_words(text: str) -> list:
     '''
     pattern = re.escape(string.punctuation)
     list_words = re.split(f'[{pattern} ]+', text)
+    
     return list_words
 
 
@@ -24,5 +25,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
