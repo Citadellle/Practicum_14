@@ -12,6 +12,7 @@ def calculate_sums(user_list: list) -> list:
     new_list = []
     for i in range(len(user_list) - 1):
         new_list.append(user_list[i] + user_list[i+1])
+        
     return new_list
 
 
@@ -25,4 +26,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
