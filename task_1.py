@@ -1,15 +1,13 @@
-def calculate_sums(user_list: list) -> nist:
+def calculate_sums(user_list: list) -> list:
     '''
     Calculate sums of adjacent elements in a list.
     
     Args:
         list: list of numbers to process
+        
     Returns:
         list: new list where each element is the sum of two adjacent elements
               from the user_list
-    Example:
-        Input: [1, 2, 3, 4]
-        Output: [3, 5, 7]
     '''
     new_list = []
     for i in range(len(user_list) - 1):
@@ -27,3 +25,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
