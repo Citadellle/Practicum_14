@@ -1,6 +1,8 @@
 import re
+import string
 
-user_list = re.split(r'[.,:;!?\-"\'() ]+', input())
+pattern = re.escape(string.punctuation)
+user_list = re.split(f'[{pattern} ]+', input())
 
 new_list = list(set(user_list))
 
