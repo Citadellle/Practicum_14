@@ -3,7 +3,7 @@ def get_user_list() -> list:
     The function generates a list of integers entered in one line separated by a space.
     
     Returns:
-        list: List of 10 numbers entered by the user
+        list: List of numbers entered by the user
     '''
     user_list = [int(i) for i in input().split(' ')]
 
@@ -51,4 +51,5 @@ def main():
 
 
 if __name__ == '__main__':
+
     main()
